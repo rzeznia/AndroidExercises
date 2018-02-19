@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mrzeznik.lab1.laboratorium1.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="32dp"
+            android:text="Wynik" />
+
+        <TextView
+            android:id="@+id/wynikTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_toStartOf="@+id/liczba1EditText"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+        <EditText
+            android:id="@+id/liczba1EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="26dp"
+            android:ems="10"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/liczba2EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/dodawanieButton"
+            android:layout_below="@+id/liczba1EditText"
+            android:layout_marginTop="21dp"
+            android:ems="10"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/dodawanieButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/liczba1EditText"
+            android:layout_below="@+id/liczba1EditText"
+            android:layout_marginTop="76dp"
+            android:onClick="dodawanieOnClick"
+            android:text="Dodawanie" />
+
+        <Button
+            android:id="@+id/odejmowanieButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dodawanieButton"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@+id/wynikTextView"
+            android:onClick="odejmowanieOnClick"
+            android:text="Odejmowanie" />
+
+        <Button
+            android:id="@+id/mnozenieButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/odejmowanieButton"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/wynikTextView"
+            android:onClick="mnozenieOnClick"
+            android:text="Mnożenie" />
+
+        <Button
+            android:id="@+id/dzielenieButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mnozenieButton"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@+id/wynikTextView"
+            android:onClick="dzielenieOnClick"
+            android:text="Dzielenie" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
