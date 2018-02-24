@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mrzeznix.laboratorium2.Main2Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="match_parent"
+            android:layout_height="436dp"
+            android:layout_marginStart="16dp"
+            android:headerBackground="#080447"
+            android:touchscreenBlocksFocus="false"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="3dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Uzasadnienie"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="440dp" />
+
+        <EditText
+            android:id="@+id/reasonText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="459dp" />
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:background="@drawable/buttonshape"
+            android:onClick="saveOnClick"
+            android:text="ZAPISZ"
+            android:textColor="@android:color/background_light"
+            tools:layout_editor_absoluteX="57dp"
+            tools:layout_editor_absoluteY="505dp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
