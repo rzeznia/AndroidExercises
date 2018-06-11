@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="lab.mrzeznik.com.laboratorium3.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/eee"
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <EditText
+            android:id="@+id/edit_nazwa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nazwa"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edit_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Number"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/add_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="tryToAddRecord"
+            android:text="Dodaj rekord" />
+
+        <Button
+            android:id="@+id/del_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="tryToDelete"
+            android:text="Usuń rekord" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zawartośc bazy danych" />
+
+        <TextView
+            android:id="@+id/db_contains"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
