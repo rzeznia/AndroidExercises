@@ -22,7 +22,7 @@ import java.io.UnsupportedEncodingException;
 public class MainActivity extends AppCompatActivity {
 
     TextView imie; TextView nazwisko; TextView note; RatingBar rate;
-    String url = "http://153.19.62.200:8080/opinion/save";
+    String url = "http://10.253.8.176:8080/opinion/save";
     public Rate new_rate = new Rate();
     public Author new_author = new Author();
     public Opinion new_opinion = new Opinion();
@@ -54,9 +54,9 @@ public class MainActivity extends AppCompatActivity {
             return true;
     }
     public void populateObjects() {
-        new_author.firstName = imie.toString();
-        new_author.lastName = nazwisko.toString();
-        new_rate.note = note.toString();
+        new_author.firstName = imie.getText().toString();
+        new_author.lastName = nazwisko.getText().toString();
+        new_rate.note = note.getText().toString();
         new_rate.ratePoints = rate.getRating();
         new_opinion.author = new_author;
         new_opinion.rate = new_rate;
