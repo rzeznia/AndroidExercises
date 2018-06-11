@@ -2,3 +2,4 @@
 + Laboratorium 1: Prosta aplikacja kalkulatora
 + Laboratorium 2: 2x activity, okno logowania, datepicker, alerts
 + Laboratorium 3: SQLite wstęp, zaznajomienie się z SugarOWR
++ Laboratorium 4: Volley + Gson - wstęp do jsona i REST
